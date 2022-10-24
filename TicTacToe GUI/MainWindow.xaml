@@ -1,0 +1,26 @@
+﻿<Window x:Class="TicTacToe_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TicTacToe_GUI"
+        mc:Ignorable="d"
+        Title="TicTacToe" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Button Content="Start/Stop" Name="StartButton" HorizontalAlignment="Left" Margin="79,53,0,0" VerticalAlignment="Top" Height="32" Width="106" Click="Button_Click"/>
+            <Label Content="0 Hits" Name="CounterLabel" HorizontalAlignment="Left" Margin="109,85,0,0" VerticalAlignment="Top" Height="27" Width="46"/>
+
+        </Grid>
+        <Canvas Name="BallField" Background="Aqua" Margin="217,0,0,0">
+            <Image Name="Logo" Height="61" Canvas.Left="242" Canvas.Top="206" Width="100" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Image.Source>
+                    <BitmapImage DecodePixelWidth="100"  
+                                 UriSource="dvdlogo.png" />
+                </Image.Source>
+            </Image>
+
+        </Canvas>
+
+    </Grid>
+</Window>
